@@ -1,12 +1,12 @@
 <?php
 /**
- * Plugin Name: Boilerplate Elementor Extension
- * Description: Just the boilerplate code for creating a custom elementor extension.
- * Plugin URI:  https://rideout.studio
+ * Plugin Name: Alte Weberei 2025
+ * Description: Plugin for Alte Weberei 2025 Version Homepage
+ * Plugin URI:  https://alteweberei.de
  * Version:     1.0.0
- * Author:      Matthew Rideout
- * Author URI:  https://rideout.studio
- * Text Domain: boilerplate-elementor-extension
+ * Author:      Jonathan Wandscheer
+ * Author URI:  https://jw-mediadesign.de
+ * Text Domain: alteweberei-2025
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -111,7 +111,7 @@ final class Boilerplate_Elementor_Extension {
 	 */
 	public function i18n() {
 
-		load_plugin_textdomain( 'boilerplate-elementor-extension' );
+		load_plugin_textdomain( 'alteweberei-2025' );
 
 	}
 
@@ -282,9 +282,9 @@ final class Boilerplate_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'boilerplate-elementor-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'boilerplate-elementor-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'boilerplate-elementor-extension' ) . '</strong>'
+			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'alteweberei-2025' ),
+			'<strong>' . esc_html__( 'Elementor Test Extension', 'alteweberei-2025' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'alteweberei-2025' ) . '</strong>'
 		);
 
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
@@ -306,9 +306,9 @@ final class Boilerplate_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'boilerplate-elementor-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'boilerplate-elementor-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'boilerplate-elementor-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'alteweberei-2025' ),
+			'<strong>' . esc_html__( 'Elementor Test Extension', 'alteweberei-2025' ) . '</strong>',
+			'<strong>' . esc_html__( 'Elementor', 'alteweberei-2025' ) . '</strong>',
 			 self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -331,9 +331,9 @@ final class Boilerplate_Elementor_Extension {
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'boilerplate-elementor-extension' ),
-			'<strong>' . esc_html__( 'Elementor Test Extension', 'boilerplate-elementor-extension' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'boilerplate-elementor-extension' ) . '</strong>',
+			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'alteweberei-2025' ),
+			'<strong>' . esc_html__( 'Elementor Test Extension', 'alteweberei-2025' ) . '</strong>',
+			'<strong>' . esc_html__( 'PHP', 'alteweberei-2025' ) . '</strong>',
 			 self::MINIMUM_PHP_VERSION
 		);
 
